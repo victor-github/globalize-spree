@@ -10,9 +10,10 @@
   <% Spree::Taxon.easy_accessors.each do |locale| %>
     <% fieldsym = "name_#{locale}".to_sym %>
     <%= f.field_container fieldsym do %>
-    <%= f.label fieldsym, t(fieldsym.to_s) %> <span class="required">*</span><br />
-    <%= f.error_message_on fieldsym %>
-    <%= f.text_field fieldsym, :class => 'fullwidth title'  %>
+      <%= f.label fieldsym, t(fieldsym.to_s) %> <span class="required">*</span><br />
+      <%= f.error_message_on fieldsym %>
+      <%= f.text_field fieldsym, :class => 'fullwidth title'  %>
+    <% end %>
   <% end %>
 <% end %>
 
