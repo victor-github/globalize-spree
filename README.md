@@ -1,6 +1,8 @@
 # GlobalizeSpree
 
-Localizes model data in Spree using Gloablize3. This is a fork of Tomash's globalize-spree plugin, that was updated to be compatible with Rails 3.2 and Spree 1.2
+This is a fork of Tomash's globalize-spree plugin, that was updated to be compatible with Rails 3.2 and Spree 1.2. 
+It provides localization using the gem globalize3.
+I also added an admin form for specifying the taxon name. This can be done by right clicking on the taxon in the Categories pages and choosing Edit. (ignore the errors displayed in the dropdown, they are harmless)
 
 [![Build Status](https://secure.travis-ci.org/tomash/globalize-spree.png)](http://travis-ci.org/tomash/globalize-spree)
 
@@ -47,3 +49,6 @@ And spree-globalize will replace Product form's "name" field with, respectively,
 
 The attr_accessible line is necessary since in Rails 3.2 attributes need to be whitelisted explicitly in order for assignment to work.
 
+### TO DOs:
+  Fix taxon edit menu errors
+  More models
