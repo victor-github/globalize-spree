@@ -17,8 +17,8 @@ Add to Gemfile:
     gem "globalize3"
 
 Now run the rake task to copy migrations and run them:
-    rake globalize_spree:install
-    rake db:migrate
+    bundle rake globalize_spree:install
+    bundle rake db:migrate
 
 
 ## Usage
@@ -27,9 +27,11 @@ Currently globalizes: Product (name, description), Taxon (name).
 
 ### Basic usage
 
-It works like Globalize. To set your locale, add, inside an initializer for example,
+It works like Globalize. To set your locale, add your default locale, for example inside config/initializers/spree.rb
 
-Spree::Config.set(:default_locale => 'en') 
+Spree.config do |config|
+  default_locale = "ro"
+end
 
 Then you can do:
 
