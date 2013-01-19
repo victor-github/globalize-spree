@@ -1,6 +1,6 @@
 # GlobalizeSpree
 
-This is a fork of Tomash's globalize-spree plugin, that was updated to be compatible with Rails 3.2 and Spree 1.2. 
+Updated to be compatible with Rails 3.2 and Spree 1.2. 
 It provides localization using the gem globalize3.
 I also added an admin form for specifying the taxon name. This can be done by right clicking on the taxon in the Categories pages and choosing Edit. (ignore the errors displayed in the dropdown, they are harmless)
 
